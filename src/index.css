@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-source-code-pro;
+  }
+  body {
+    @apply bg-black-2 text-white;
+  }
+
+  a {
+    @apply text-blue underline hover:text-sky hover:no-underline visited:text-teal;
+  }
+}
