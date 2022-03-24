@@ -21,7 +21,7 @@ const About = () => {
           far less in the game automating it rather than playing.
         </p>
         <p>
-          After realising I'm not bad at this coding thing I decided to make a
+          After realising I'm not bad at this coding thing, I decided to make a
           career out of it and became an apprentice at Apteco in 2012. I very
           quickly learnt that I knew far less than I thought I did. Fast forward
           almost 10 years of working with C#, .Net, WPF, typescript, Angular,

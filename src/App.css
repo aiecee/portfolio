@@ -22,6 +22,30 @@
   @apply text-maroon underline;
 }
 
+.socials-left {
+  @apply fixed hidden sm:block w-8 left-5 bottom-0;
+}
+
+.socials-right {
+  @apply fixed hidden sm:block w-8 right-5 bottom-0;
+}
+
+.socials-line {
+  @apply w-px h-32 bg-white m-auto;
+}
+
+.socials-icon {
+  @apply mb-6 w-8 h-8 text-white;
+}
+
+.socials-link {
+  @apply hover:text-white visited:text-white no-underline hover:no-underline visited:no-underline;
+}
+
+.socials-text {
+  @apply text-sm text-white transform -translate-y-48 rotate-90;
+}
+
 .main-content {
   @apply h-full;
 }

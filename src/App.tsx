@@ -1,16 +1,11 @@
 import { useEffect } from "react";
-import {
-  BrowserRouter,
-  Link,
-  Routes,
-  Route,
-  useNavigate,
-} from "react-router-dom";
+import { Link, Routes, Route, useNavigate } from "react-router-dom";
+import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
+
 import "./App.css";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
 import Projects from "./components/projects/Projects-List";
-import Contact from "./components/contact/Contact";
 
 const App = () => {
   const navigate = useNavigate();
@@ -26,9 +21,6 @@ const App = () => {
           break;
         case "p":
           navigate("/projects");
-          break;
-        case "c":
-          navigate("/contact");
           break;
       }
     };
@@ -50,17 +42,47 @@ const App = () => {
           <Link className="navigation-item" to="/projects">
             <span className="navigation-item-label">P</span>rojects
           </Link>
-          <Link className="navigation-item" to="/contact">
-            <span className="navigation-item-label">C</span>ontact
-          </Link>
         </div>
       </nav>
+      <div className="socials-left">
+        <ul>
+          <li>
+            <a href="https://github.com/aiecee">
+              <FaGithubSquare className="socials-icon" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/_AieCee">
+              <FaTwitterSquare className="socials-icon" />
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/matt-collinge-972b03153/">
+              <FaLinkedin className="socials-icon" />
+            </a>
+          </li>
+          <li>
+            <div className="socials-line"></div>
+          </li>
+        </ul>
+      </div>
+      <div className="socials-right">
+        <ul>
+          <li>
+            <a className="socials-link" href="mailto:mattycov@googlemail.com">
+              <p className="socials-text">mattycov@googlemail.com</p>
+            </a>
+          </li>
+          <li>
+            <div className="socials-line"></div>
+          </li>
+        </ul>
+      </div>
       <main className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="projects" element={<Projects />} />
-          <Route path="contact" element={<Contact />} />
         </Routes>
       </main>
     </div>
