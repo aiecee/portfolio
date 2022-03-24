@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 
 import { latestRepos, BasicRepoDetails } from "../../external/github";
-import "./Projects.css";
+import "./Projects-List.css";
+import Project from "./Project";
 
 const Projects = () => {
   const [repos, setRepos] = useState<Array<BasicRepoDetails>>([]);
@@ -16,15 +17,13 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="projects-wrapper">
-      {repos.map((repo) => {
-        return (
-          <div key={repo.id}>
-            <h1>{repo.full_name}</h1>
-          </div>
-        );
-      })}
-    </div>
+    <section className="projects-wrapper">
+      <div className="projects">
+        {repos.map((repo) => {
+          return <Project githubProject={repo} />;
+        })}
+      </div>
+    </section>
   );
 };
 

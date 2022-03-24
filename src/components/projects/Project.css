@@ -1,0 +1,31 @@
+.project-card {
+  @apply bg-black-3 shadow-md shadow-black-0 p-4 flex flex-col w-72 h-60 gap-2;
+}
+
+.project-card-title {
+  @apply flex flex-row justify-between items-baseline;
+}
+
+.project-card-title-text {
+  @apply text-2xl text-white;
+}
+
+.project-card-title-icons {
+  @apply flex flex-row gap-2;
+}
+
+.project-card-description {
+  @apply text-sm;
+}
+
+.project-card-license {
+  @apply text-sm;
+}
+
+.project-card-topics-list {
+  @apply flex flex-row flex-wrap gap-2;
+}
+
+.project-card-topic-chip {
+  @apply border-maroon border-2 text-maroon box-border rounded-md text-xs pr-1 pl-1;
+}
