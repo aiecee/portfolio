@@ -1,5 +1,9 @@
+.app {
+  @apply h-full;
+}
+
 .navigation {
-  @apply bg-black-1 fixed top-0 left-0 w-full h-32 sm:h-14 flex flex-row justify-between pt-4 pb-4 pl-8 pr-8 shadow-md shadow-black-0;
+  @apply bg-black-1 fixed top-0 left-0 w-full h-32 sm:h-14 flex flex-row justify-between pt-4 pb-4 pl-16 pr-16 shadow-md shadow-black-0;
 }
 
 .navigation-heading {
@@ -16,4 +20,8 @@
 
 .navigation-item-label {
   @apply text-maroon underline;
+}
+
+.main-content {
+  @apply h-full;
 }

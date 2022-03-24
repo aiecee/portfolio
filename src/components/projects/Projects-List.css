@@ -1,5 +1,5 @@
 .projects-wrapper {
-  @apply p-2 flex justify-center items-center;
+  @apply sm:h-full p-2 flex justify-center items-center;
 }
 
 .projects {

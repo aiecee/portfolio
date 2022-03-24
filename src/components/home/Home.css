@@ -1,5 +1,5 @@
 .home-container {
-  @apply flex h-screen justify-center items-center pr-8 pl-8;
+  @apply mt-12 sm:mt-0 flex h-screen justify-center items-center pr-8 pl-8;
 }
 
 .intro {

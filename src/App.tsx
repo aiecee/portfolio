@@ -37,7 +37,7 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div className="app">
       <nav className="navigation">
         <h1 className="navigation-heading">Matt Collinge</h1>
         <div className="navigation-items">
@@ -55,7 +55,7 @@ const App = () => {
           </Link>
         </div>
       </nav>
-      <main>
+      <main className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />

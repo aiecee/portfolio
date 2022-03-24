@@ -4,10 +4,10 @@
 
 @layer base {
   html {
-    @apply font-poppins;
+    @apply h-full font-poppins;
   }
   body {
-    @apply bg-black-2 text-gray-2;
+    @apply h-full bg-black-2 text-gray-2;
   }
 
   a {
