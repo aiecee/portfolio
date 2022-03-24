@@ -4,13 +4,13 @@
 
 @layer base {
   html {
-    @apply font-source-code-pro;
+    @apply font-poppins;
   }
   body {
-    @apply bg-black-2 text-white;
+    @apply bg-black-2 text-gray-2;
   }
 
   a {
-    @apply text-blue underline hover:text-sky hover:no-underline visited:text-teal;
+    @apply text-maroon underline hover:text-pink hover:no-underline visited:text-red;
   }
 }

@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "source-code-pro": ['"Source Code Pro"', "monospace"],
+        poppins: ['"Poppins"', "sans-serif"],
       },
     },
     colors: {
