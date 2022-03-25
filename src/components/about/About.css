@@ -1,5 +1,5 @@
 .about-container {
-  @apply sm:h-full flex flex-col lg:flex-row justify-center items-center p-3;
+  @apply sm:h-screen flex flex-col lg:flex-row justify-center items-center p-3;
 }
 
 .about-content {

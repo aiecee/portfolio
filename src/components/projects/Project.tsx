@@ -1,8 +1,10 @@
 import { MdOpenInNew } from "react-icons/md";
 import { FaGithubAlt } from "react-icons/fa";
+import { motion, Variants } from "framer-motion";
 
 import { BasicRepoDetails } from "../../external/github";
 import "./Project.css";
+import { hoverVariants } from "../../assets/variants";
 
 type ProjectProps = {
   githubProject: BasicRepoDetails;
@@ -10,7 +12,13 @@ type ProjectProps = {
 
 const Project = ({ githubProject }: ProjectProps) => {
   return (
-    <div key={githubProject.id} className="project-card">
+    <motion.div
+      variants={hoverVariants}
+      initial="intial"
+      whileHover="hover"
+      key={`${githubProject.id}`}
+      className="project-card"
+    >
       <section className="project-card-title">
         <h1 className="project-card-title-text">{githubProject.name}</h1>
         <div className="project-card-title-icons">
@@ -41,7 +49,7 @@ const Project = ({ githubProject }: ProjectProps) => {
           ))}
         </section>
       )}
-    </div>
+    </motion.div>
   );
 };
 

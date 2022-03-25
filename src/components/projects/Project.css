@@ -1,5 +1,5 @@
 .project-card {
-  @apply bg-black-3 shadow-md shadow-black-0 p-4 flex flex-col w-72 h-60 gap-2;
+  @apply bg-black-3 shadow-md shadow-black-0 p-4 flex flex-col w-72 h-60 gap-2 rounded-lg;
 }
 
 .project-card-title {

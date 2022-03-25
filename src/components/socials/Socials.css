@@ -1,0 +1,31 @@
+.socials-left {
+  @apply fixed hidden sm:block w-8 left-5 bottom-0;
+}
+
+.socials-right {
+  @apply fixed hidden sm:block w-8 right-5 bottom-0;
+}
+
+.socials-footer {
+  @apply block sm:hidden w-full bg-black-2 mt-6;
+}
+
+.socials-footer-grid {
+  @apply flex flex-row justify-center items-center;
+}
+
+.socials-line {
+  @apply w-px h-32 bg-white m-auto;
+}
+
+.socials-icon {
+  @apply mb-6 w-8 h-8 text-white hover:text-maroon;
+}
+
+.socials-link {
+  @apply hover:text-white visited:text-white no-underline hover:no-underline visited:no-underline;
+}
+
+.socials-text {
+  @apply text-sm text-white hover:text-maroon transform -translate-y-48 rotate-90;
+}
