@@ -1,6 +1,6 @@
 import { MdOpenInNew } from "react-icons/md";
 import { FaGithubAlt } from "react-icons/fa";
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { BasicRepoDetails } from "../../external/github";
 import "./Project.css";
